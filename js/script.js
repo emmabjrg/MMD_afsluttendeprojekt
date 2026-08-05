@@ -72,3 +72,36 @@ document.addEventListener("click", (event) => {
     servicesMenu.classList.remove("is-open");
   }
 }); 
+
+
+
+const cards = document.querySelectorAll(".testimonial-card");
+const dots = document.querySelectorAll(".testimonial-dot");
+const prev = document.querySelector(".testimonial-arrow-left");
+const next = document.querySelector(".testimonial-arrow-right");
+
+let current = 0;
+
+function showSlide(index) {
+  cards[current].classList.remove("is-active");
+  dots[current].classList.remove("is-active");
+
+  current = (index + cards.length) % cards.length;
+
+  cards[current].classList.add("is-active");
+  dots[current].classList.add("is-active");
+}
+
+next.addEventListener("click", () => {
+  showSlide(current + 1);
+});
+
+prev.addEventListener("click", () => {
+  showSlide(current - 1);
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    showSlide(index);
+  });
+});

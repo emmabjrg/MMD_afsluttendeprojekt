@@ -1,4 +1,4 @@
-/* ------------ CSS-VARIABLER / DESIGNFARVER -------------- */
+/*----------------------------------- CSS-VARIABLER / DESIGNFARVER --------------------------------*/
 
 :root {
   --primary: #1f2a3a;
@@ -9,10 +9,7 @@
 }
 
 
-/* ---------------   2. RESET
-   Fjerner browserens standardafstande og gør
-   størrelser lettere at kontrollere.
-   ---------------- */
+/*----------------------------------- RESET --------------------------------*/
 
 *,
 *::before,
@@ -58,33 +55,26 @@ textarea {
 }
 
 
-/* --------------- 3. GLOBALE STYLES
-   Generelle regler, som bruges på hele websitet.
-   --------------- */
+/*----------------------------------- GLOBALE STYLES --------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 
-   main {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-
-    padding: 0 20px;
-   }
-
-/* TYPOGRAFI */
+/*----------- Typografi ------------*/
 
 
-/* KNAPPER */
+/*----------- Knapper ------------*/
 
 
-/* --------------- 4. HEADER – MOBILE FIRST
-   Standardreglerne er til mobil.
-   Desktop tilføjes senere i media query.
-   --------------- */
+/*----------------------------------- HEADER --------------------------------*/
 
 .site-header {
-  position: relative;
+  position: fixed;
   z-index: 100;
+  width: 100%;
   background-color: var(--background);
 }
 
@@ -93,13 +83,11 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
   padding: 16px 20px;
 }
 
 
-/* --------------- 5. LOGO
-   --------------- */
+/*----------- Logo ------------*/
 
 .logo {
   display: flex;
@@ -127,21 +115,16 @@ textarea {
 }
 
 
-/* ---------------
-   6. HAMBURGERKNAP
-   Vises kun på mobil.
-   --------------- */
+/*----------- Hamburgerknap ------------*/
 
 .menu-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
-
   width: 44px;
   height: 44px;
   padding: 8px;
-
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -149,30 +132,22 @@ textarea {
 
 .menu-line {
   display: block;
-
   width: 100%;
   height: 2px;
-
   background-color: var(--primary);
-
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
 }
 
 
-/* ---------------
-   7. MOBILNAVIGATION
-   Navigationen er skjult, indtil JavaScript
-   tilføjer klassen .is-open.
-   --------------- */
+/*----------- Mobilnavigation ------------*/
 
 .navigation {
   display: none;
   flex-basis: 100%;
   flex-direction: column;
   gap: 20px;
-
   width: 100%;
   padding-top: 20px;
 }
@@ -192,53 +167,39 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   min-height: 50px;
   padding: 0;
-
   color: var(--text);
   font-size: 16px;
-
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid rgba(31, 42, 58, 0.12);
-
   cursor: pointer;
 }
 
 
-/* ---------------
-   8. SERVICES DROPDOWN
-   --------------- */
+/*----------- Services dropdown ------------*/
 
 .services-button svg {
   width: 20px;
   height: 20px;
-
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-
   transition: transform 0.2s ease;
 }
-
-/* Pilen vender opad, når dropdown-menuen er åben */
 
 .services-button.is-open svg {
   transform: rotate(180deg);
 }
 
-/* Dropdown-menuen er skjult som standard */
-
 .services-menu {
   display: none;
   padding: 8px 0 8px 16px;
 }
-
-/* JavaScript tilføjer .is-open */
 
 .services-menu.is-open {
   display: block;
@@ -246,32 +207,23 @@ textarea {
 
 .services-menu a {
   display: block;
-
   padding: 11px 0;
-
   color: var(--primary);
   font-size: 14px;
 }
 
 
-/* ---------------
-   9. HEADER CTA
-   Linket ligner en knap, men er et <a>-element,
-   fordi det fører brugeren til kontaktsiden.
-   --------------- */
+/*----------- Header CTA ------------*/
 
 .header-cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-
   min-height: 58px;
   padding: 0 20px;
-
   color: var(--secondary);
   font-size: 15px;
-
   background-color: var(--primary);
   border: 1px solid var(--primary);
   border-radius: 4px;
@@ -280,7 +232,6 @@ textarea {
 .header-cta svg {
   width: 30px;
   height: 22px;
-
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -289,10 +240,7 @@ textarea {
 }
 
 
-/* ---------------
-   10. HAMBURGERANIMATION
-   De tre linjer bliver til et kryds.
-   --------------- */
+/*----------- Hamburgeranimation ------------*/
 
 .menu-button.is-open .menu-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
@@ -307,191 +255,31 @@ textarea {
 }
 
 
-/* ---------------
-   11. DESKTOP HEADER
-   Gælder fra 900px og op.
-   --------------- */
+/*----------------------------------- HERO --------------------------------*/
 
-@media (min-width: 900px) {
+.hero-index {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 86px 20px 0;
+  background: linear-gradient(
+    to right,
+    var(--background),
+    var(--secondary)
+  );
+}
 
-  /* Headerens samlede højde og afstand */
-
-  .header-inner {
-    flex-wrap: nowrap;
-
-    min-height: 96px;
-    padding: 16px clamp(32px, 4vw, 60px);
-  }
-
-
-  /* Desktoplogo */
-
-  .logo-name {
-    font-size: 36px;
-  }
-
-  .logo-subtitle {
-    margin-top: 7px;
-    font-size: 15px;
-  }
-
-
-  /* Hamburgeren skjules på desktop */
-
-  .menu-button {
-    display: none;
-  }
-
-
-  /* Navigationen bliver vandret */
-
-  .navigation {
-    display: flex;
-    flex-basis: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: clamp(36px, 4vw, 58px);
-
-    width: auto;
-    padding-top: 0;
-  }
-
-  .navigation-list {
-    flex-direction: row;
-    align-items: center;
-    gap: clamp(30px, 3.5vw, 54px);
-  }
-
-
-  /* Desktop-navigationens tekst */
-
-  .navigation-list > li > a,
-  .services-button {
-    position: relative;
-
-    width: auto;
-    min-height: 42px;
-
-    font-size: 18px;
-
-    border-bottom: 0;
-  }
-
-
-  /* Grøn hoverlinje under menupunkterne */
-
-  .navigation-list > li > a::after,
-  .services-button::after {
-    position: absolute;
-    right: 0;
-    bottom: 1px;
-    left: 0;
-
-    height: 2px;
-
-    background-color: var(--accent);
-    content: "";
-
-    transform: scaleX(0);
-    transform-origin: left;
-
-    transition: transform 0.2s ease;
-  }
-
-  .navigation-list > li > a:hover::after,
-  .services-button:hover::after {
-    transform: scaleX(1);
-  }
-
-
-  /* Referencepunkt for dropdown-menuen */
-
-  .services-item {
-    position: relative;
-  }
-
-  .services-button {
-    gap: 10px;
-  }
-
-
-  /* Desktop-dropdown */
-
-  .services-menu {
-    position: absolute;
-    top: calc(100% + 12px);
-    left: 50%;
-
-    display: block;
-
-    min-width: 250px;
-    padding: 10px;
-
-    background-color: var(--secondary);
-    border: 1px solid rgba(31, 42, 58, 0.1);
-    border-radius: 8px;
-
-    box-shadow: 0 14px 35px rgba(31, 42, 58, 0.12);
-
-    opacity: 0;
-    pointer-events: none;
-
-    transform: translate(-50%, -8px);
-
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
-  }
-
-  .services-menu.is-open {
-    opacity: 1;
-    pointer-events: auto;
-
-    transform: translate(-50%, 0);
-  }
-
-  .services-menu a {
-    padding: 12px 14px;
-
-    font-size: 15px;
-    border-radius: 5px;
-  }
-
-  .services-menu a:hover {
-    background-color: rgba(107, 142, 90, 0.12);
-  }
-
-
-  /* Mindre desktop-CTA */
-
-  .header-cta {
-    min-width: 280px;
-    min-height: 62px;
-    gap: 24px;
-
-    padding: 0 24px;
-
-    font-size: 17px;
-
-    transition:
-      color 0.2s ease,
-      background-color 0.2s ease;
-  }
-
-  .header-cta:hover {
-    color: var(--primary);
-    background-color: var(--accent);
-  }
-
-  .header-cta svg {
-    width: 32px;
-    height: 22px;
-  }
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 
-/* --------------- hero sektion --------------- */
+/*----------- Hero-tekst ------------*/
 
 .hero-eyebrow {
   color: var(--accent);
@@ -522,28 +310,34 @@ p {
   line-height: 1.5;
 }
 
-.hero-cta {
-  display: inline-flex;
+
+/*----------- Hero-knapper ------------*/
+
+.hero-cta-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.general-cta {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-
-  margin-top: 24px;
+  width: 100%;
+  max-width: 100%;
   min-height: 58px;
+  margin-top: 18px;
   padding: 0 20px;
-
   color: var(--secondary);
   font-size: 15px;
-
   background-color: var(--primary);
   border: 1px solid var(--primary);
   border-radius: 4px;
 }
 
-.hero-cta svg {
+.general-cta svg {
   width: 30px;
   height: 22px;
-
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -551,61 +345,421 @@ p {
   stroke-linejoin: round;
 }
 
-  .hero-cta:hover {
-    color: var(--primary);
-    background-color: var(--accent);
-    border-color: var(--accent);
+.general-cta:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 58px;
+  margin-top: 10px;
+  padding: 0 20px;
+  color: var(--primary);
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.hero-cta-secondary:hover {
+  color: var(--secondary);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+
+/*----------- Hero-billede og baggrund ------------*/
+
+.hero-image {
+  padding: 0;
+}
+
+.hero-swirl {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+/*----------------------------------- FORSIDE --------------------------------*/
+
+
+/*----------- Organisationer ------------*/
+
+.organisations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 60px 20px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.orgranisations-text {
+  margin-top: 8px;
+  color: var(--primary);
+  text-align: center;
+  font-size: 16px;
+}
+
+.organisation-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.organisation-logo {
+  width: auto;
+  max-width: 26%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/*----------- Services preview ------------*/
+
+.services-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 40px 20px;
+  background-color: var(--secondary);
+}
+
+h2 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.services-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 24px;
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.services-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.learn-more svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+
+/*----------- Testimonials ------------*/
+
+.testimonials {
+  padding: 64px 20px;
+  text-align: center;
+  background-color: var(--background);
+}
+
+.testimonials-header h2 {
+  margin-top: 16px;
+}
+
+.testimonial-slider {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  display: none;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.testimonial-card.is-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-quote-mark {
+  color: var(--accent);
+  font-family: "Manrope", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.testimonial-quote {
+  min-height: 220px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.testimonial-line {
+  width: 48px;
+  height: 2px;
+  margin: 24px auto 0;
+  background-color: var(--accent);
+}
+
+.testimonial-author {
+  margin-top: 20px;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.testimonial-role {
+  margin-top: 2px;
+  color: var(--accent);
+  font-size: 15px;
+}
+
+.testimonial-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--primary);
+  font-size: 28px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: var(--secondary);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial-dot.is-active {
+  background-color: var(--accent);
+}
+
+
+/*----------------------------------- SERVICES --------------------------------*/
+
+
+/*----------------------------------- ABOUT --------------------------------*/
+
+
+/*----------------------------------- CONTACT --------------------------------*/
+
+
+/*----------------------------------- FOOTER --------------------------------*/
+
+
+/*----------------------------------- MEDIA QUERIES --------------------------------*/
+
+
+/*----------- Desktop header fra 900px ------------*/
+
+@media (min-width: 900px) {
+  .header-inner {
+    flex-wrap: nowrap;
+    min-height: 96px;
+    padding: 16px clamp(32px, 4vw, 60px);
   }
 
-  .hero-cta-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+  .logo-name {
+    font-size: 36px;
+  }
 
-    margin-top: 10px;
-    min-height: 58px;
-    padding: 0 20px;
-
-    color: var(--primary);
+  .logo-subtitle {
+    margin-top: 7px;
     font-size: 15px;
-
-    background-color: transparent;
-    border: 1px solid var(--primary);
-    border-radius: 4px;
   }
 
-  .hero-cta-secondary:hover {
-    color: var(--secondary);
-    background-color: var(--accent);
-    border-color: var(--accent);
+  .menu-button {
+    display: none;
   }
 
-  .hero-cta-container {
+  .navigation {
     display: flex;
-    flex-direction: column;
+    flex-basis: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(36px, 4vw, 58px);
+    width: auto;
+    padding-top: 0;
   }
 
-/* ---------------
-   13. SERVICES
-   --------------- */
+  .navigation-list {
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(30px, 3.5vw, 54px);
+  }
 
+  .navigation-list > li > a,
+  .services-button {
+    position: relative;
+    width: auto;
+    min-height: 42px;
+    font-size: 18px;
+    border-bottom: 0;
+  }
 
-/* ---------------
-   14. ABOUT
-   --------------- */
+  .navigation-list > li > a::after,
+  .services-button::after {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    height: 2px;
+    background-color: var(--accent);
+    content: "";
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+  }
 
+  .navigation-list > li > a:hover::after,
+  .services-button:hover::after {
+    transform: scaleX(1);
+  }
 
-/* ---------------
-   15. CONTACT
-   --------------- */
+  .services-item {
+    position: relative;
+  }
 
+  .services-button {
+    gap: 10px;
+  }
 
-/* ---------------
-   16. FOOTER
-   --------------- */
+  .services-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    display: block;
+    min-width: 250px;
+    padding: 10px;
+    background-color: var(--secondary);
+    border: 1px solid rgba(31, 42, 58, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 14px 35px rgba(31, 42, 58, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -8px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
 
+  .services-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
 
-/* ---------------
-   17. ØVRIGE MEDIA QUERIES
-   --------------- */
+  .services-menu a {
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .services-menu a:hover {
+    background-color: rgba(107, 142, 90, 0.12);
+  }
+
+  .header-cta {
+    min-width: 280px;
+    min-height: 62px;
+    gap: 24px;
+    padding: 0 24px;
+    font-size: 17px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  .header-cta:hover {
+    color: var(--primary);
+    background-color: var(--accent);
+  }
+
+  .header-cta svg {
+    width: 32px;
+    height: 22px;
+  }
+}
