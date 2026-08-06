@@ -283,7 +283,7 @@ main {
 .hero-eyebrow {
   color: var(--accent);
   font-family: "Manrope", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.25em;
@@ -1561,10 +1561,10 @@ footer {
 
 
 
-/*----------------------------------- MEDIA QUERIES --------------------------------*/
+/*----------------------------------- media quaries!!!!!! --------------------------------*/
 
 
-/*----------- Desktop fra 900px ------------*/
+/*----------- desktop fra 900px ------------*/
 
 @media (min-width: 900px) {
 
@@ -1720,62 +1720,67 @@ footer {
 
   /*----------- Hero desktop ------------*/
 
-  .hero-index {
-    min-height: 760px;
-    padding: 150px 60px 0;
-  }
+.hero-index {
+  min-height: 760px;
+  padding: 150px 60px 0;
+}
 
-  .hero-content {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    align-items: end;
-    gap: 70px;
-    width: 100%;
-    max-width: 1320px;
-    margin-inline: auto;
-  }
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 40px;
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+}
 
-  .hero-text {
-    align-self: center;
-    max-width: 720px;
-    padding-bottom: 80px;
-  }
+.hero-text {
+  align-self: center;
+  max-width: 720px;
+  padding-bottom: 70px;
+}
 
-  .hero-index h1 {
-    max-width: 720px;
-    font-size: 60px;
-    line-height: 1.15;
-  }
+.hero-index h1 {
+  max-width: 720px;
+  font-size: 60px;
+  line-height: 1.15;
+}
 
-  .hero-index .hero-text > p {
-    max-width: 620px;
-    font-size: 18px;
-  }
+.hero-index .hero-text > p {
+  max-width: 620px;
+  font-size: 16px;
+}
 
-  .hero-cta-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    margin-top: 30px;
-  }
+.hero-eyebrow {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
 
-  .hero-cta-container .general-cta,
-  .hero-cta-container .cta-secondary {
-    width: auto;
-    min-width: 230px;
-    margin-top: 0;
-  }
+.hero-cta-container {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
 
-  .hero-index .hero-image {
-    align-self: end;
-    width: 100%;
-    max-width: 520px;
-    max-height: 650px;
-    margin-inline: auto;
-    object-fit: contain;
-    object-position: bottom;
-  }
+.hero-cta-container .general-cta,
+.hero-cta-container .cta-secondary {
+  width: auto;
+  min-width: 230px;
+  margin-top: 0;
+}
 
+.hero-index .hero-image {
+  align-self: end;
+  justify-self: end;
+  width: 100%;
+  max-width: 680px;
+  max-height: 720px;
+  margin: 0;
+  object-fit: contain;
+  object-position: bottom right;
+}
 
   /*----------- Organisationer desktop ------------*/
 
@@ -2732,4 +2737,17 @@ footer {
   .footer-inner {
     max-width: 1200px;
   }
+
+  /*----------- Centrerede eyebrows desktop ------------*/
+
+.organisations .eyebrow,
+.testimonials-header .eyebrow,
+.qualifications .eyebrow,
+.contact-hero .eyebrow {
+  width: 100%;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 }
