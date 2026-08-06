@@ -723,17 +723,16 @@ h3 {
 
 .qualifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 24px;
-  gap: 0px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
 .qualifications-grid img {
-  width: 100%;
-  max-width: 5rem;
-  height: auto;
+  width: auto;
+  max-height: 5rem;
   object-fit: contain;
 }
 
