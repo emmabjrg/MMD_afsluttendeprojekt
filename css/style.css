@@ -725,7 +725,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   margin-top: 24px;
-  gap: 12px;
+  gap: 0px;
   justify-content: center;
   align-items: center;
 }
