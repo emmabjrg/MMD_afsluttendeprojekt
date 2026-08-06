@@ -668,8 +668,6 @@ h3 {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
   padding: 40px 30px;
   color: var(--secondary);
@@ -681,7 +679,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 10px
 }
 
 .footer-logo {
@@ -721,7 +719,7 @@ footer {
 .footer-socials {
   display: flex;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 20px;
   align-items: center;
 }
 
@@ -733,15 +731,45 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
+  margin: 20px 0 10px;
 }
 
 .footer-links {
   font-weight: 300;
-}
+  font-size: ;
+} 
 
 .footer-links a:hover {
   color: var(--accent);
 }
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column li {
+  margin: 10px 0;
+}
+
+.footer-contact-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact-list a {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-contact-list img {
+  width: 18px;
+}
+
+
 
 /*----------------------------------- MEDIA QUERIES --------------------------------*/
 
