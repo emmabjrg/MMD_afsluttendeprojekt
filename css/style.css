@@ -683,9 +683,231 @@ h3 {
 }
 
 
-/*----------------------------------- SERVICES --------------------------------*/
+/*----------------------------------- SERVICES UNDERSIDER --------------------------------*/
 
 
+/*----------- Hero ------------*/
+
+.hero-service-pages {
+  padding: 130px 30px 64px;
+  background: linear-gradient(
+    to right,
+    var(--background),
+    var(--secondary)
+  );
+}
+
+.hero-service-page-inner {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero-service-pages .hero-title {
+  margin-top: 16px;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+.hero-service-pages .hero-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/*----------- Introduktion ------------*/
+
+.the-service {
+  padding: 64px 30px;
+  background-color: var(--background);
+}
+
+.the-service-inner,
+.the-service-gain {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.the-service-inner h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.the-service-inner p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.the-service-gain {
+  margin-top: 64px;
+}
+
+
+/*----------------------------------- SERVICE GAINS --------------------------------*/
+
+
+/*----------- Overskrift ------------*/
+
+.service-gains-header-line {
+  width: 42px;
+  height: 2px;
+  margin-top: 18px;
+  background-color: var(--accent);
+}
+
+
+/*----------- Liste ------------*/
+
+.service-gains-list {
+  margin-top: 34px;
+}
+
+
+/*----------- Gain ------------*/
+
+.service-gain {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(31, 42, 58, 0.12);
+}
+
+.service-gain:first-child {
+  padding-top: 0;
+}
+
+.service-gain:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+
+/*----------- Nummer ------------*/
+
+.service-gain-number {
+  color: var(--secondary);
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+/*----------- Indhold ------------*/
+
+.service-gain-content h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.service-gain-content > p {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/*----------- Punkter ------------*/
+
+.service-gain-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.service-gain-points li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.service-gain-points img {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+
+/*----------------------------------- SERVICE PROCESS --------------------------------*/
+
+
+/*----------- Sektion ------------*/
+
+.service-process {
+  padding: 64px 30px;
+  background-color: var(--background);
+}
+
+.service-process-inner {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+
+/*----------- Header ------------*/
+
+.service-process-header-line {
+  width: 42px;
+  height: 2px;
+  margin-top: 18px;
+  background-color: var(--accent);
+}
+
+.service-process-header h2 {
+  margin-top: 28px;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.service-process-intro {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/*----------- Procesliste ------------*/
+
+.service-process-list {
+  margin-top: 36px;
+}
+
+
+/*----------- Procestrin ------------*/
+
+.service-process-step {
+  padding: 28px 0;
+  border-top: 1px solid rgba(31, 42, 58, 0.12);
+}
+
+.service-process-step:last-child {
+  padding-bottom: 0;
+}
+
+.service-process-step h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.service-process-step p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
 /*----------------------------------- SERVICES --------------------------------*/
 
 
