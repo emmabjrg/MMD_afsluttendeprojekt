@@ -220,7 +220,7 @@ main {
   justify-content: space-between;
   gap: 24px;
   min-height: 58px;
-  padding: 0 20px;
+  padding: 0 30px;
   color: var(--secondary);
   font-size: 15px;
   background-color: var(--primary);
@@ -264,7 +264,7 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 86px 20px 0;
+  padding: 86px 30px 0;
   background: linear-gradient(
     to right,
     var(--background),
@@ -326,7 +326,7 @@ p {
   max-width: 100%;
   min-height: 58px;
   margin-top: 18px;
-  padding: 0 20px;
+  padding: 0 30px;
   color: var(--secondary);
   font-size: 15px;
   background-color: var(--primary);
@@ -357,7 +357,7 @@ p {
   gap: 24px;
   min-height: 58px;
   margin-top: 10px;
-  padding: 0 20px;
+  padding: 0 30px;
   color: var(--primary);
   font-size: 15px;
   background-color: transparent;
@@ -400,7 +400,7 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 60px 20px;
+  padding: 60px 30px;
 }
 
 .eyebrow {
@@ -446,7 +446,7 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 40px 20px;
+  padding: 40px 30px;
   background-color: var(--secondary);
 }
 
@@ -515,7 +515,7 @@ h3 {
 /*----------- Testimonials ------------*/
 
 .testimonials {
-  padding: 64px 20px;
+  padding: 64px 30px;
   text-align: center;
   background-color: var(--background);
 }
@@ -629,7 +629,7 @@ h3 {
   align-items: center;
   justify-content: center;
   max-width: 600px;
-    padding: 40px 20px;
+    padding: 40px 30px;
 }
 
 .CTA-section {
@@ -638,7 +638,7 @@ h3 {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 60px 20px;
+  padding: 60px 30px;
   background-color: var(--secondary);
 }
 
