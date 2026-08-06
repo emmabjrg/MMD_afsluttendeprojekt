@@ -1264,6 +1264,195 @@ h3 {
 
 /*----------------------------------- CONTACT --------------------------------*/
 
+.contact-hero {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 30px 64px;
+  background: linear-gradient(
+    to right,
+    var(--background),
+    var(--secondary)
+  );
+}
+
+.contact-hero-inner {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+
+
+/*----------- Kontaktsektion ------------*/
+
+.contact-section {
+  padding: 64px 30px;
+  background-color: var(--background);
+}
+
+.contact-section-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+
+/*----------- Kontaktoplysninger ------------*/
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(31, 42, 58, 0.12);
+}
+
+.contact-detail:first-child {
+  padding-top: 0;
+}
+
+.contact-detail:last-child {
+  border-bottom: 0;
+}
+
+.contact-detail-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  object-fit: contain;
+}
+
+.contact-detail-content h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.contact-detail-content p,
+.contact-detail-content a {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-detail-content a:hover {
+  color: var(--accent);
+}
+
+
+/*----------- Kontaktformular ------------*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form-field label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid rgba(107, 142, 90, 0.55);
+  border-radius: 2px;
+  outline: none;
+}
+
+.contact-form-field input {
+  min-height: 50px;
+}
+
+.contact-form-field textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.contact-form-field input::placeholder,
+.contact-form-field textarea::placeholder {
+  color: rgba(18, 20, 23, 0.55);
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(107, 142, 90, 0.12);
+}
+
+
+/*----------- Formular-knap ------------*/
+
+.contact-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 54px;
+  padding: 0 24px;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form-button svg {
+  width: 24px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.contact-form-button:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-form-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/*----------- Formular-note ------------*/
+
+.contact-form-note {
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+
 
 /*----------------------------------- FOOTER --------------------------------*/
 
@@ -1613,5 +1802,54 @@ footer {
 
   .service-preview-card h2 {
     font-size: 32px;
+  }
+
+    /*----------- Contact desktop ------------*/
+
+  .contact-section {
+    padding: 100px 60px;
+  }
+
+  .contact-section-inner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .contact-form {
+    margin-top: 0;
+  }
+
+  .contact-detail {
+    grid-template-columns: 34px 1fr;
+    gap: 20px;
+    padding: 26px 0;
+  }
+
+  .contact-detail-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contact-detail-content h2 {
+    font-size: 20px;
+  }
+
+  .contact-detail-content p,
+  .contact-detail-content a {
+    font-size: 15px;
+  }
+
+  .contact-form-field input {
+    min-height: 54px;
+  }
+
+  .contact-form-field textarea {
+    min-height: 190px;
+  }
+
+  .contact-form-button {
+    min-height: 56px;
   }
 }
