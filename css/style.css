@@ -665,6 +665,83 @@ h3 {
 
 /*----------------------------------- FOOTER --------------------------------*/
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 30px;
+  color: var(--secondary);
+  font-size: 14px;
+  background-color: var(--primary);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo-name {
+  color: var(--secondary);
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.footer-logo-subtitle {
+  margin-top: 6px;
+  color: var(--accent);
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.footer-description {
+  margin-top: 12px;
+  max-width: 400px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.footer-heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.footer-links {
+  font-weight: 300;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
 
 /*----------------------------------- MEDIA QUERIES --------------------------------*/
 
