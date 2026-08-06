@@ -134,3 +134,26 @@ serviceRows.forEach((row) => {
     showServiceCard(row.dataset.service);
   });
 });
+
+
+/*----------------------------------- SCROLL ANIMATION --------------------------------*/
+
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const fadeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15
+  }
+);
+
+fadeElements.forEach((element) => {
+  fadeObserver.observe(element);
+});
