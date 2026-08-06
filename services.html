@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +21,496 @@
 </head>
 
 <body>
-<header>
-    <nav></nav>
-</header>
-<main>
-    <section class="hero_services"></section>
-    <section class="services"></section>
-    <section class="quote"></section>
-    <section class="CTA"></section>
-</main>
-<footer></footer>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-name">Tim Price</span>
+                <span class="logo-subtitle">Coaching</span>
+            </a>
+
+            <button class="menu-button" type="button" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="services-item">
+                        <button class="services-button" type="button">
+                            Services
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+
+                        <ul class="services-menu">
+                            <li>
+                                <a href="executive-coaching.html">
+                                    Executive Coaching
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="team-coaching.html">
+                                    Team Coaching
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="leadership-development.html">
+                                    Leadership Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="workshops.html">
+                                    Workshops
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Tim</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a class="header-cta" href="contact.html">
+                    <span>Book a Conversation</span>
+
+                    <svg viewBox="0 0 32 24">
+                        <path d="M2 12h27"></path>
+                        <path d="M21 4l8 8-8 8"></path>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Services hero -->
+        <section class="hero-services">
+            <div class="hero-services-inner">
+
+                <p class="eyebrow">Services</p>
+
+                <h1>
+                    Coaching and leadership development for individuals,
+                    teams and <span class="highlight">organisations.</span>
+                </h1>
+
+                <p class="hero-services-description">
+                    Explore the service that best matches your goals,
+                    challenges and organisational context.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Services overview -->
+        <section class="services-overview">
+            <div class="services-overview-inner">
+
+                <!-- Service rows -->
+                <div class="services-list">
+
+                    <!-- Executive Coaching -->
+                    <a class="service-row is-active" href="executive-coaching.html" data-service="executive">
+                        <img class="service-row-icon" src="images/icon/oneonone.svg" alt="">
+
+                        <span class="service-number">01</span>
+
+                        <div class="service-row-content">
+                            <h2>Executive Coaching</h2>
+
+                            <p>
+                                Personalised one-to-one coaching for leaders
+                                seeking greater clarity, confidence and impact.
+                            </p>
+                        </div>
+
+                        <svg class="service-row-arrow" viewBox="0 0 32 24" aria-hidden="true">
+                            <path d="M2 12h27"></path>
+                            <path d="M21 4l8 8-8 8"></path>
+                        </svg>
+                    </a>
+
+                    <!-- Team Coaching -->
+                    <a class="service-row" href="team-coaching.html" data-service="team">
+                        <img class="service-row-icon" src="images/icon/teamcoaching.svg" alt="">
+
+                        <span class="service-number">02</span>
+
+                        <div class="service-row-content">
+                            <h2>Team Coaching</h2>
+
+                            <p>
+                                Strengthen trust, communication and collaboration
+                                to improve how your team works and performs.
+                            </p>
+                        </div>
+
+                        <svg class="service-row-arrow" viewBox="0 0 32 24" aria-hidden="true">
+                            <path d="M2 12h27"></path>
+                            <path d="M21 4l8 8-8 8"></path>
+                        </svg>
+                    </a>
+
+                    <!-- Leadership Development -->
+                    <a class="service-row" href="leadership-development.html" data-service="leadership">
+                        <img class="service-row-icon" src="images/icon/development.svg" alt="">
+
+                        <span class="service-number">03</span>
+
+                        <div class="service-row-content">
+                            <h2>Leadership Development</h2>
+
+                            <p>
+                                Experiential programmes that help leaders grow
+                                with greater awareness, authenticity and confidence.
+                            </p>
+                        </div>
+
+                        <svg class="service-row-arrow" viewBox="0 0 32 24" aria-hidden="true">
+                            <path d="M2 12h27"></path>
+                            <path d="M21 4l8 8-8 8"></path>
+                        </svg>
+                    </a>
+
+                    <!-- Workshops -->
+                    <a class="service-row" href="workshops.html" data-service="workshops">
+                        <img class="service-row-icon" src="images/icon/workshop.svg" alt="">
+
+                        <span class="service-number">04</span>
+
+                        <div class="service-row-content">
+                            <h2>Workshops</h2>
+
+                            <p>
+                                Interactive workshops designed around real
+                                organisational challenges using practical
+                                facilitation methods.
+                            </p>
+                        </div>
+
+                        <svg class="service-row-arrow" viewBox="0 0 32 24" aria-hidden="true">
+                            <path d="M2 12h27"></path>
+                            <path d="M21 4l8 8-8 8"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <!-- Desktop preview cards -->
+                <div class="service-previews">
+
+                    <!-- Executive Coaching card -->
+                    <article class="service-preview-card is-active" data-service-card="executive">
+                        <div class="service-preview-icon">
+                            <img src="images/icon/oneonone.svg" alt="">
+                        </div>
+
+                        <p class="service-preview-eyebrow">
+                            Executive Coaching
+                        </p>
+
+                        <h2>
+                            Greater clarity.<br>
+                            Stronger leadership.
+                        </h2>
+
+                        <div class="service-preview-line"></div>
+
+                        <p class="service-preview-description">
+                            One-to-one coaching for leaders who want to think
+                            sharper, lead with confidence and create lasting impact.
+                        </p>
+
+                        <ul class="service-preview-benefits">
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Build self-awareness
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Lead with confidence
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Make better decisions
+                            </li>
+                        </ul>
+
+                        <a class="service-preview-link" href="executive-coaching.html">
+                            <span>Learn more about Executive Coaching</span>
+
+                            <svg viewBox="0 0 32 24" aria-hidden="true">
+                                <path d="M2 12h27"></path>
+                                <path d="M21 4l8 8-8 8"></path>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Team Coaching card -->
+                    <article class="service-preview-card" data-service-card="team">
+                        <div class="service-preview-icon">
+                            <img src="images/icon/teamcoaching.svg" alt="">
+                        </div>
+
+                        <p class="service-preview-eyebrow">
+                            Team Coaching
+                        </p>
+
+                        <h2>
+                            Build teams that<br>
+                            perform together.
+                        </h2>
+
+                        <div class="service-preview-line"></div>
+
+                        <p class="service-preview-description">
+                            Create stronger collaboration, trust and communication
+                            across your organisation.
+                        </p>
+
+                        <ul class="service-preview-benefits">
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Strengthen collaboration
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Build trust
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Improve team performance
+                            </li>
+                        </ul>
+
+                        <a class="service-preview-link" href="team-coaching.html">
+                            <span>Learn more about Team Coaching</span>
+
+                            <svg viewBox="0 0 32 24" aria-hidden="true">
+                                <path d="M2 12h27"></path>
+                                <path d="M21 4l8 8-8 8"></path>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Leadership Development card -->
+                    <article class="service-preview-card" data-service-card="leadership">
+                        <div class="service-preview-icon">
+                            <img src="images/icon/development.svg" alt="">
+                        </div>
+
+                        <p class="service-preview-eyebrow">
+                            Leadership Development
+                        </p>
+
+                        <h2>
+                            Develop leaders for<br>
+                            the future.
+                        </h2>
+
+                        <div class="service-preview-line"></div>
+
+                        <p class="service-preview-description">
+                            Long-term leadership programmes designed to build
+                            confident and capable leaders.
+                        </p>
+
+                        <ul class="service-preview-benefits">
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Develop future leaders
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Grow with confidence
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Create lasting impact
+                            </li>
+                        </ul>
+
+                        <a class="service-preview-link" href="leadership-development.html">
+                            <span>Learn more about Leadership Development</span>
+
+                            <svg viewBox="0 0 32 24" aria-hidden="true">
+                                <path d="M2 12h27"></path>
+                                <path d="M21 4l8 8-8 8"></path>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Workshops card -->
+                    <article class="service-preview-card" data-service-card="workshops">
+                        <div class="service-preview-icon">
+                            <img src="images/icon/workshop.svg" alt="">
+                        </div>
+
+                        <p class="service-preview-eyebrow">
+                            Workshops
+                        </p>
+
+                        <h2>
+                            Learn through<br>
+                            experience.
+                        </h2>
+
+                        <div class="service-preview-line"></div>
+
+                        <p class="service-preview-description">
+                            Interactive workshops that encourage reflection,
+                            collaboration and meaningful change.
+                        </p>
+
+                        <ul class="service-preview-benefits">
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Learn by doing
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Encourage collaboration
+                            </li>
+
+                            <li>
+                                <img class="service-check" src="images/icon/tick.svg" alt=""> Inspire meaningful change
+                            </li>
+                        </ul>
+
+                        <a class="service-preview-link" href="workshops.html">
+                            <span>Learn more about Workshops</span>
+
+                            <svg viewBox="0 0 32 24" aria-hidden="true">
+                                <path d="M2 12h27"></path>
+                                <path d="M21 4l8 8-8 8"></path>
+                            </svg>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="quote"></section>
+        <section class="CTA-section">
+            <div>
+                <h2>Let’s start a conversation</h2>
+                <p>If you’re ready to take the next step in your leadership journey, I’d love to hear from you.
+                </p>
+                <a class="general-cta" href="contact.html">
+                    <span>Book a Conversation</span>
+                    <svg viewBox="0 0 32 24">
+                        <path d="M2 12h27"></path>
+                        <path d="M21 4l8 8-8 8"></path>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <div class="CTA-section-contact">
+                    <img src="images/icon/conversation.svg">
+                    <p>Book a free 30-minute conversation. <br>Let’s explore how we can work together.</br>
+                    </p>
+                </div>
+                <div class="CTA-section-contact">
+                    <img src="images/icon/mail.svg">
+                    <p>Prefer to email me? <br> tim@timpricecoaching.com </br> </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-inner">
+            <div class="footer-brand">
+                <a class="footer-logo" href="index.html">
+                    <span class="footer-logo-name">Tim Price</span>
+                    <span class="footer-logo-subtitle">Coaching</span>
+                </a>
+
+                <p class="footer-description">
+                    Helping leaders and organisations develop stronger leadership
+                    through coaching, reflection and meaningful conversations.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="images/icon/linkedin.svg">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="images/icon/instagram.svg">
+                    </a>
+                    <a href="#" aria-label="Email">
+                        <img src="images/icon/mail.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+
+                <h2 class="footer-heading">Services</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="executive-coaching.html">Executive Coaching</a>
+                    </li>
+
+                    <li>
+                        <a href="team-coaching.html">Team Coaching</a>
+                    </li>
+
+                    <li>
+                        <a href="leadership-development.html">
+                            Leadership Development
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="workshops.html">Workshops</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-column">
+
+                <h2 class="footer-heading">Company</h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="about.html">About Tim</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-column">
+
+                <h2 class="footer-heading">Get in touch</h2>
+                <div class="footer-contact-list">
+
+                    <a href="mailto:tim@timpricecoaching.com">
+                        <img src="images/icon/mail.svg" alt="Email icon">
+                        <span>tim@timpricecoaching.com</span>
+                    </a>
+
+                    <a href="tel:+4500000000">
+                        <img src="images/icon/phone.svg" alt="Phone icon">
+                        <span>+45 00 00 00 00</span>
+                    </a>
+
+                </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

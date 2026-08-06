@@ -71,7 +71,7 @@ document.addEventListener("click", (event) => {
     servicesButton.classList.remove("is-open");
     servicesMenu.classList.remove("is-open");
   }
-}); 
+});
 
 
 
@@ -80,28 +80,57 @@ const dots = document.querySelectorAll(".testimonial-dot");
 const prev = document.querySelector(".testimonial-arrow-left");
 const next = document.querySelector(".testimonial-arrow-right");
 
-let current = 0;
+if (cards.length > 0 && dots.length > 0 && prev && next) {
 
-function showSlide(index) {
-  cards[current].classList.remove("is-active");
-  dots[current].classList.remove("is-active");
+  let current = 0;
 
-  current = (index + cards.length) % cards.length;
+  function showSlide(index) {
+    cards[current].classList.remove("is-active");
+    dots[current].classList.remove("is-active");
 
-  cards[current].classList.add("is-active");
-  dots[current].classList.add("is-active");
+    current = (index + cards.length) % cards.length;
+
+    cards[current].classList.add("is-active");
+    dots[current].classList.add("is-active");
+  }
+
+  next.addEventListener("click", () => {
+    showSlide(current + 1);
+  });
+
+  prev.addEventListener("click", () => {
+    showSlide(current - 1);
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      showSlide(index);
+    });
+  });
+}
+/*----------------------------------- SERVICES PREVIEW --------------------------------*/
+
+const serviceRows = document.querySelectorAll(".service-row");
+const serviceCards = document.querySelectorAll(".service-preview-card");
+
+function showServiceCard(serviceName) {
+  serviceRows.forEach((row) => {
+    const isActive = row.dataset.service === serviceName;
+    row.classList.toggle("is-active", isActive);
+  });
+
+  serviceCards.forEach((card) => {
+    const isActive = card.dataset.serviceCard === serviceName;
+    card.classList.toggle("is-active", isActive);
+  });
 }
 
-next.addEventListener("click", () => {
-  showSlide(current + 1);
-});
+serviceRows.forEach((row) => {
+  row.addEventListener("mouseenter", () => {
+    showServiceCard(row.dataset.service);
+  });
 
-prev.addEventListener("click", () => {
-  showSlide(current - 1);
-});
-
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    showSlide(index);
+  row.addEventListener("focus", () => {
+    showServiceCard(row.dataset.service);
   });
 });
