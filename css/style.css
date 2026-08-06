@@ -350,7 +350,7 @@ p {
   border-color: var(--accent);
 }
 
-.hero-cta-secondary {
+.cta-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -363,9 +363,10 @@ p {
   background-color: transparent;
   border: 1px solid var(--primary);
   border-radius: 4px;
+  width: 100%;
 }
 
-.hero-cta-secondary:hover {
+.cta-secondary:hover {
   color: var(--secondary);
   background-color: var(--accent);
   border-color: var(--accent);
@@ -400,7 +401,7 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 60px 30px;
+  padding: 64px 30px;
 }
 
 .eyebrow {
@@ -446,12 +447,12 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 40px 30px;
+  padding: 64px 30px;
   background-color: var(--secondary);
 }
 
 h2 {
-  margin-top: 16px;
+  margin-top: 12px;
   margin-bottom: 24px;
   font-family: "Manrope", sans-serif;
   font-size: 32px;
@@ -466,7 +467,7 @@ h2 {
   gap: 12px;
   width: 100%;
   max-width: 400px;
-  margin-top: 24px;
+  margin-top: 20px;
   padding: 20px;
   background-color: var(--background);
   border-radius: 8px;
@@ -529,7 +530,7 @@ h3 {
   grid-template-columns: 48px 1fr 48px;
   align-items: center;
   gap: 8px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .testimonial-card {
@@ -598,7 +599,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .testimonial-dot {
@@ -615,6 +616,8 @@ h3 {
   background-color: var(--accent);
 }
 
+/*----------- About preview ------------*/
+
 .about-preview {
   display: flex;
   flex-direction: column;
@@ -628,31 +631,39 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   max-width: 600px;
-    padding: 40px 30px;
+  padding: 64px 30px;
 }
+
+/*----------- CTA section ------------*/
 
 .CTA-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100px;
-  padding: 60px 30px;
+  padding: 64px 30px;
   background-color: var(--secondary);
 }
 
+.CTA-section a {
+  margin-top: 24px;
+}
+
 .CTA-section-contact {
-  padding-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  padding-top: 20px;
 }
 
 .CTA-section-contact p {
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.5;
 }
+
 
 /*----------------------------------- SERVICES --------------------------------*/
 
@@ -669,7 +680,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 30px;
+  padding: 64px 30px;
   color: var(--secondary);
   font-size: 14px;
   background-color: var(--primary);
@@ -679,7 +690,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px
+  gap: 32px;
 }
 
 .footer-logo {
@@ -724,14 +735,14 @@ footer {
 }
 
 .footer-heading {
+  margin: 0 0 16px;
+  color: var(--accent);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin: 20px 0 10px;
 }
 
 .footer-links {
@@ -747,8 +758,8 @@ footer {
   flex-direction: column;
 }
 
-.footer-column li {
-  margin: 10px 0;
+.footer-column li + li {
+  margin-top: 12px;
 }
 
 .footer-contact-list {
