@@ -560,10 +560,15 @@ h3 {
 }
 
 .testimonial-quote {
+  align-self: center;
   min-height: 220px;
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 0px;
+  font-size: 16px;
   line-height: 1.5;
+}
+
+.testimonial-quote-long {
+  font-size: 14px;
 }
 
 .testimonial-line {
@@ -639,7 +644,11 @@ h3 {
   justify-content: center;
   width: 100%;
   max-width: 600px;
-  padding: 64px 30px;
+  padding: 30px 30px 64px;
+}
+
+.about-preview-text {
+  margin-bottom: 10px;
 }
 
 /*----------- CTA section ------------*/
