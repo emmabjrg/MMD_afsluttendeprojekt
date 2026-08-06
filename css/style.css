@@ -1718,24 +1718,29 @@ footer {
   /*----------------------------------- FORSIDE DESKTOP --------------------------------*/
 
 
-  /*----------- Hero desktop ------------*/
+/*----------- Hero desktop ------------*/
 
 .hero-index {
+  position: relative;
   min-height: 760px;
   padding: 150px 60px 0;
 }
 
 .hero-content {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
   gap: 40px;
   width: 100%;
   max-width: 1320px;
+  min-height: 610px;
   margin-inline: auto;
 }
 
 .hero-text {
+  position: relative;
+  z-index: 2;
   align-self: center;
   max-width: 720px;
   padding-bottom: 70px;
@@ -1776,16 +1781,19 @@ footer {
 }
 
 .hero-index .hero-image {
-  align-self: end;
-  justify-self: end;
-  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  z-index: 1;
+
+  width: 52%;
   max-width: 680px;
   max-height: 720px;
   margin: 0;
+
   object-fit: contain;
   object-position: bottom right;
 }
-
   /*----------- Organisationer desktop ------------*/
 
   .organisations {
@@ -2375,39 +2383,52 @@ mask-image: linear-gradient(
 
   /*----------- About hero desktop ------------*/
 
-  .hero-about {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    align-items: end;
-    min-height: 650px;
-    padding: 150px 60px 0;
-  }
+/*----------- About hero desktop ------------*/
 
-  .hero-about .hero-inner {
-    align-self: center;
-    width: 100%;
-    max-width: 620px;
-    margin-left: auto;
-    padding-bottom: 60px;
-  }
+.hero-about {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: end;
+  min-height: 600px;
+  padding: 150px 60px 0;
+}
 
-  .hero-about .hero-title {
-    font-size: 52px;
-  }
+.hero-about .hero-image {
+  grid-column: 1;
+  grid-row: 1;
 
-  .hero-about .hero-description {
-    font-size: 17px;
-  }
+  justify-self: end;
+  width: 100%;
+  max-width: 520px;
+  max-height: 530px;
+  margin: 0;
+  object-fit: contain;
+  object-position: bottom;
+}
 
-  .hero-about .hero-image {
-    width: 100%;
-    max-width: 480px;
-    max-height: 550px;
-    margin-right: auto;
-    object-fit: contain;
-    object-position: bottom;
-  }
+.hero-about .hero-inner {
+  grid-column: 2;
+  grid-row: 1;
 
+  align-self: center;
+  width: 100%;
+  max-width: 620px;
+  margin: 0;
+  padding: 20px 40px 70px 70px;
+}
+
+.hero-about .hero-title {
+  margin-top: 24px;
+  font-size: 52px;
+  line-height: 1.12;
+}
+
+.hero-about .hero-description {
+  max-width: 560px;
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 1.7;
+}
 
   /*----------- My story desktop ------------*/
 
@@ -2418,7 +2439,7 @@ mask-image: linear-gradient(
   .about-inner {
     display: grid;
     grid-template-columns: 0.75fr 1fr;
-    gap: 100px;
+    gap: 12px;
     width: 100%;
     max-width: 1200px;
   }
