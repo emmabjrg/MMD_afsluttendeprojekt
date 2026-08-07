@@ -103,7 +103,7 @@ main {
 }
 
 
-/*----------- Logo ------------*/
+/*--------------------- Logo ----------------------*/
 
 .logo {
   display: flex;
@@ -131,7 +131,7 @@ main {
 }
 
 
-/*----------- Hamburgerknap ------------*/
+/*--------------------- Hamburgerknap ----------------------*/
 
 .menu-button {
   display: flex;
@@ -156,8 +156,7 @@ main {
     opacity 0.2s ease;
 }
 
-
-/*----------- Mobilnavigation ------------*/
+/*--------------------- Mobilnavigation ----------------------*/
 
 .navigation {
   display: none;
@@ -194,8 +193,7 @@ main {
   cursor: pointer;
 }
 
-
-/*----------- Services dropdown ------------*/
+/*--------------------- Services dropdown ----------------------*/
 
 .services-button svg {
   width: 20px;
@@ -228,8 +226,7 @@ main {
   font-size: 14px;
 }
 
-
-/*----------- Header CTA ------------*/
+/*--------------------- Header CTA ----------------------*/
 
 .header-cta {
   display: flex;
@@ -255,8 +252,7 @@ main {
   stroke-linejoin: round;
 }
 
-
-/*----------- Hamburgeranimation ------------*/
+/*--------------------- Hamburgeranimation ----------------------*/
 
 .menu-button.is-open .menu-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
@@ -270,9 +266,9 @@ main {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
-/*----------------------------------- HERO --------------------------------*/
-
+/*-----------------------------------------------------------------------------------------------
+          HERO
+-------------------------------------------------------------------------------------------------*/
 .hero-index {
   position: relative;
   display: flex;
@@ -282,11 +278,6 @@ main {
   justify-content: center;
   min-height: 100vh;
   padding: 86px 30px 0;
-  background: linear-gradient(
-    to right,
-    var(--background),
-    var(--secondary)
-  );
 }
 
 .hero-content {
@@ -294,8 +285,7 @@ main {
   z-index: 1;
 }
 
-
-/*----------- Hero-tekst ------------*/
+/*-------------------- Hero-tekst ----------------------*/
 
 .hero-eyebrow {
   color: var(--accent-dark);
@@ -328,7 +318,7 @@ p {
 }
 
 
-/*----------- Hero-knapper ------------*/
+/*--------------------- Hero-knapper ----------------------*/
 
 .hero-cta-container {
   display: flex;
@@ -390,8 +380,7 @@ p {
   border-color: var(--accent);
 }
 
-
-/*----------- Hero-billede og baggrund ------------*/
+/*--------------------- Hero-billede og baggrund ----------------------*/
 
 .hero-image {
   padding: 0;
@@ -407,11 +396,11 @@ p {
   pointer-events: none;
 }
 
+/*-----------------------------------------------------------------------------------------------
+          Index / Forsiden 
+-------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------- FORSIDE --------------------------------*/
-
-
-/*----------- Organisationer ------------*/
+/*--------------------- Organisationer ----------------------*/
 
 .organisations {
   display: flex;
@@ -456,7 +445,7 @@ p {
 }
 
 
-/*----------- Services preview ------------*/
+/*--------------------- Services preview ----------------------*/
 
 .services-preview {
   display: flex;
@@ -536,7 +525,8 @@ h3 {
 }
 
 
-/*----------- Testimonials ------------*/
+
+/*--------------------- Testimonials ----------------------*/
 
 .testimonials {
   padding: 64px 30px;
@@ -579,7 +569,7 @@ h3 {
 .testimonial-quote {
   align-self: center;
   min-height: 200px;
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -587,7 +577,7 @@ h3 {
 .testimonial-line {
   width: 48px;
   height: 2px;
-  margin: 0px auto 0;
+  margin: 0 auto;
   background-color: var(--accent-dark);
 }
 
@@ -647,7 +637,7 @@ h3 {
   background-color: var(--accent-dark);
 }
 
-/*----------- About preview ------------*/
+/*--------------------- About preview ----------------------*/
 
 .about-preview {
   display: flex;
@@ -671,7 +661,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/*----------- CTA section ------------*/
+/*--------------------- CTA section ----------------------*/
 
 .CTA-section {
   display: flex;
@@ -700,243 +690,14 @@ h3 {
 }
 
 
-/*----------------------------------- SERVICES UNDERSIDER --------------------------------*/
-
-
-/*----------- Hero ------------*/
-
-.hero-service-pages {
-  padding: 130px 30px 64px;
-  background: linear-gradient(
-    to right,
-    var(--background),
-    var(--secondary)
-  );
-}
-
-.hero-service-page-inner {
-  width: 100%;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
-.hero-service-pages .hero-title {
-  margin-top: 16px;
-  font-size: 40px;
-  line-height: 1.15;
-}
-
-.hero-service-pages .hero-description {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-/*----------- Introduktion ------------*/
-
-.the-service {
-  padding: 64px 30px;
-  background-color: var(--background);
-}
-
-.the-service-inner,
-.the-service-gain {
-  width: 100%;
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-.the-service-inner h2 {
-  margin: 0;
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-.the-service-inner p {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.the-service-gain {
-  margin-top: 64px;
-}
-
-
-/*----------------------------------- SERVICE GAINS --------------------------------*/
-
-
-/*----------- Overskrift ------------*/
-
-.service-gains-header-line {
-  width: 42px;
-  height: 2px;
-  margin-top: 18px;
-  background-color: var(--accent-dark);
-}
-
-
-/*----------- Liste ------------*/
-
-.service-gains-list {
-  margin-top: 34px;
-}
-
-
-/*----------- Gain ------------*/
-
-.service-gain {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 10px;
-  padding: 28px 0;
-  border-bottom: 1px solid rgba(31, 42, 58, 0.12);
-}
-
-.service-gain:first-child {
-  padding-top: 0;
-}
-
-.service-gain:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-
-/*----------- Nummer ------------*/
-
-.service-gain-number {
-  color: var(--secondary);
-  font-family: "Manrope", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-
-/*----------- Indhold ------------*/
-
-.service-gain-content h2 {
-  margin: 0;
-  font-family: "Manrope", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.service-gain-content > p {
-  margin-top: 14px;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-
-/*----------- Punkter ------------*/
-
-.service-gain-points {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.service-gain-points li {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 13px;
-  line-height: 1.4;
-}
-
-.service-gain-points img {
-  flex-shrink: 0;
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-}
-
-
-/*----------------------------------- SERVICE PROCESS --------------------------------*/
-
-
-/*----------- Sektion ------------*/
-
-.service-process {
-  padding: 64px 30px;
-  background-color: var(--background);
-}
-
-.service-process-inner {
-  width: 100%;
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-
-/*----------- Header ------------*/
-
-.service-process-header-line {
-  width: 42px;
-  height: 2px;
-  margin-top: 18px;
-  background-color: var(--accent);
-}
-
-.service-process-header h2 {
-  margin-top: 28px;
-  margin-bottom: 0;
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-.service-process-intro {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-/*----------- Procesliste ------------*/
-
-.service-process-list {
-  margin-top: 36px;
-}
-
-
-/*----------- Procestrin ------------*/
-
-.service-process-step {
-  padding: 28px 0;
-  border-top: 1px solid rgba(31, 42, 58, 0.12);
-}
-
-.service-process-step:last-child {
-  padding-bottom: 0;
-}
-
-.service-process-step h3 {
-  font-size: 20px;
-  line-height: 1.3;
-}
-
-.service-process-step p {
-  margin-top: 12px;
-  font-size: 14px;
-  line-height: 1.7;
-}
-/*----------------------------------- SERVICES --------------------------------*/
-
+/*-----------------------------------------------------------------------------------------------
+          SERVICES
+-------------------------------------------------------------------------------------------------*/
 
 /*----------- Services hero ------------*/
 
 .hero-services {
   padding: 130px 30px 64px;
-  background: linear-gradient(
-    to right,
-    var(--background),
-    var(--secondary)
-  );
 }
 
 .hero-services-inner {
@@ -959,8 +720,7 @@ h3 {
   line-height: 1.6;
 }
 
-
-/*----------- Services overview ------------*/
+/*----------- Sercives overvioew ------------*/
 
 .services-overview {
   padding: 64px 30px;
@@ -978,8 +738,7 @@ h3 {
   flex-direction: column;
 }
 
-
-/*----------- Service row ------------*/
+/*--------------------- Service row ----------------------*/
 
 .service-row {
   display: grid;
@@ -1043,9 +802,7 @@ h3 {
 .service-row:hover .service-row-arrow {
   transform: translateX(4px);
 }
-
-
-/*----------- Desktop preview cards ------------*/
+/*--------------------- Desktop preview cards ----------------------*/
 
 .service-previews {
   display: none;
@@ -1059,8 +816,7 @@ h3 {
   display: block;
 }
 
-
-/*----------- Preview card content ------------*/
+/*--------------------- Preview card content ----------------------*/
 
 .service-preview-icon {
   display: flex;
@@ -1157,11 +913,225 @@ h3 {
 }
 
 
+/*-----------------------------------------------------------------------------------------------
+          SERVICES UNDERSIDER
+-------------------------------------------------------------------------------------------------*/
+
+/*--------------------- Hero ----------------------*/
+
+.hero-service-pages {
+  padding: 130px 30px 64px;
+}
+
+.hero-service-page-inner {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero-service-pages .hero-title {
+  margin-top: 16px;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+.hero-service-pages .hero-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*--------------------- Introduktion ----------------------*/
+
+.the-service {
+  padding: 64px 30px;
+  background-color: var(--background);
+}
+
+.the-service-inner,
+.the-service-gain {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.the-service-inner h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.the-service-inner p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.the-service-gain {
+  margin-top: 64px;
+}
 
 
+/*--------------------- SERVICE GAINS SIDE ----------------------*/
+
+/*--------------------- Overskrift ----------------------*/
+
+.service-gains-header-line {
+  width: 42px;
+  height: 2px;
+  margin-top: 18px;
+  background-color: var(--accent-dark);
+}
+
+/*--------------------- Liste ----------------------*/
+
+.service-gains-list {
+  margin-top: 34px;
+}
+
+/*--------------------- Gain ----------------------*/
+
+.service-gain {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(31, 42, 58, 0.12);
+}
+
+.service-gain:first-child {
+  padding-top: 0;
+}
+
+.service-gain:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
 
 
-/*----------------------------------- ABOUT --------------------------------*/
+/*--------------------- Nummer ----------------------*/
+
+.service-gain-number {
+  color: var(--secondary);
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+/*--------------------- Indhold ----------------------*/
+
+.service-gain-content h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.service-gain-content > p {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*--------------------- Punkter ----------------------*/
+
+.service-gain-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.service-gain-points li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.service-gain-points img {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/*--------------------- SERVICE PROCESS ----------------------*/
+
+
+/*--------------------- Sektion ----------------------*/
+
+.service-process {
+  padding: 64px 30px;
+  background-color: var(--background);
+}
+
+.service-process-inner {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+
+/*--------------------- Header ----------------------*/
+
+.service-process-header-line {
+  width: 42px;
+  height: 2px;
+  margin-top: 18px;
+  background-color: var(--accent);
+}
+
+.service-process-header h2 {
+  margin-top: 28px;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.service-process-intro {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/*--------------------- Procesliste ----------------------*/
+
+.service-process-list {
+  margin-top: 36px;
+}
+
+
+/*--------------------- Procestrin ----------------------*/
+
+.service-process-step {
+  padding: 28px 0;
+  border-top: 1px solid rgba(31, 42, 58, 0.12);
+}
+
+.service-process-step:last-child {
+  padding-bottom: 0;
+}
+
+.service-process-step h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.service-process-step p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*-----------------------------------------------------------------------------------------------
+          ABOUT SIDE
+-------------------------------------------------------------------------------------------------*/
 
 .hero-about {
   position: relative;
@@ -1171,11 +1141,6 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 86px 30px 0;
-  background: linear-gradient(
-    to right,
-    var(--background),
-    var(--secondary)
-  );
 }
 
 .about {
@@ -1211,8 +1176,7 @@ h3 {
   object-fit: contain;
 }
 
-
-/*----------------------------------- IMAGE QUOTE SECTION --------------------------------*/
+/*--------------------- IMAGE QUOTE SECTION ----------------------*/
 
 .image-quote-section {
   position: relative;
@@ -1230,8 +1194,7 @@ h3 {
   overflow: hidden;
 }
 
-
-/*----------- Mørkt overlay ------------*/
+/*--------------------- Mørkt overlay ----------------------*/
 
 .image-quote-overlay {
   position: absolute;
@@ -1244,8 +1207,7 @@ h3 {
   );
 }
 
-
-/*----------- Citat-indhold ------------*/
+/*--------------------- Citat-indhold ----------------------*/
 
 .image-quote-content {
   position: relative;
@@ -1279,7 +1241,9 @@ h3 {
   background-color: var(--accent);
 }
 
-/*----------------------------------- CONTACT --------------------------------*/
+/*-----------------------------------------------------------------------------------------------
+          CONTACT SIDEe
+-------------------------------------------------------------------------------------------------*/
 
 .contact-hero {
   position: relative;
@@ -1289,11 +1253,6 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 130px 30px 64px;
-  background: linear-gradient(
-    to right,
-    var(--background),
-    var(--secondary)
-  );
 }
 
 .contact-hero-inner {
@@ -1303,8 +1262,7 @@ h3 {
 }
 
 
-
-/*----------- Kontaktsektion ------------*/
+/*--------------------- Kontaktsektion ----------------------*/
 
 .contact-section {
   padding: 64px 30px;
@@ -1317,8 +1275,7 @@ h3 {
   margin-inline: auto;
 }
 
-
-/*----------- Kontaktoplysninger ------------*/
+/*--------------------- Kontaktoplysninger ----------------------*/
 
 .contact-details {
   display: flex;
@@ -1372,7 +1329,7 @@ h3 {
 }
 
 
-/*----------- Kontaktformular ------------*/
+/*--------------------- Kontaktformular ----------------------*/
 
 .contact-form {
   display: flex;
@@ -1423,8 +1380,7 @@ h3 {
   box-shadow: 0 0 0 2px rgba(107, 142, 90, 0.12);
 }
 
-
-/*----------- Formular-knap ------------*/
+/*--------------------- Formular-knap ----------------------*/
 
 .contact-form-button {
   display: flex;
@@ -1462,8 +1418,7 @@ h3 {
   transform: translateX(4px);
 }
 
-
-/*----------- Formular-note ------------*/
+/*--------------------- Formular-note ----------------------*/
 
 .contact-form-note {
   margin-top: 0;
@@ -1472,9 +1427,9 @@ h3 {
 }
 
 
-
-
-/*----------------------------------- FOOTER --------------------------------*/
+/*-----------------------------------------------------------------------------------------------
+          FOOTER
+-------------------------------------------------------------------------------------------------*/
 
 footer {
   display: flex;
@@ -1579,9 +1534,11 @@ footer {
   width: 18px;
 }
 
-/*----------------------------------- SCROLL ANIMATION --------------------------------*/
+/*-----------------------------------------------------------------------------------------------
+          SCROLLL ANIMATION
+-------------------------------------------------------------------------------------------------*/
 
-/*----------- Fade ind ------------*/
+/*--------------------- Fade ind ----------------------*/
 
 .fade-in {
   opacity: 0;
@@ -1596,14 +1553,15 @@ footer {
   transform: translateY(0);
 }
 
-/*----------------------------------- media quaries!!!!!! --------------------------------*/
+/*-----------------------------------------------------------------------------------------------
+          MEDIA QUERIES
+-------------------------------------------------------------------------------------------------*/
 
-
-/*----------- desktop fra 900px ------------*/
+/*--------------------- desktop fra 900px ----------------------*/
 
 @media (min-width: 900px) {
 
-  /*----------------------------------- GLOBALE DESKTOP STYLES --------------------------------*/
+  /*--------------------- GLOBALE DESKTOP STYLES ----------------------*/
 
   h1 {
     font-size: 60px;
@@ -1620,12 +1578,59 @@ footer {
   }
 
 
-  /*----------------------------------- HEADER DESKTOP --------------------------------*/
+/*--------------------- Fælles side-padding desktop ----------------------*/
 
-  .header-inner {
+  .hero-index,
+  .organisations,
+  .services-preview,
+  .testimonials,
+  .CTA-section,
+  .hero-services,
+  .services-overview,
+  .hero-service-pages,
+  .the-service,
+  .service-process,
+  .about,
+  .qualifications,
+  .contact-hero,
+  .contact-section,
+  footer {
+    padding-right: max(60px, calc((100% - 1200px) / 2));
+    padding-left: max(60px, calc((100% - 1200px) / 2));
+  }
+
+
+  /*--------------------- Eyebrows til desktop ----------------------*/
+
+  .organisations .eyebrow,
+  .testimonials-header .eyebrow,
+  .qualifications .eyebrow,
+  .contact-hero .eyebrow {
+    width: 100%;
+    max-width: none;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero-index .hero-eyebrow,
+  .services-preview > .eyebrow,
+  .hero-services .eyebrow,
+  .hero-service-pages .eyebrow,
+  .the-service-gain .eyebrow,
+  .service-process .eyebrow,
+  .hero-about .eyebrow,
+  .about .eyebrow,
+  .about-preview .eyebrow {
+    text-align: left;
+  }
+
+
+/*--------------------- HEADER DESKTOP ----------------------*/
+
+   .header-inner {
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1320px;
     min-height: 96px;
     margin-inline: auto;
     padding: 16px 60px;
@@ -1750,10 +1755,10 @@ footer {
   }
 
 
-  /*----------------------------------- FORSIDE DESKTOP --------------------------------*/
+  /*--------------------- FORSIDE DESKTOP ----------------------*/
 
 
-/*----------- Hero desktop ------------*/
+/*--------------------- Hero desktop ----------------------*/
 
 .hero-index {
   position: relative;
@@ -1768,7 +1773,7 @@ footer {
   align-items: end;
   gap: 40px;
   width: 100%;
-  max-width: 1320px;
+  max-width: 1200px;
   min-height: 610px;
   margin-inline: auto;
 }
@@ -1829,11 +1834,16 @@ footer {
   object-fit: contain;
   object-position: bottom right;
 }
-  /*----------- Organisationer desktop ------------*/
+  /*--------------------- Organisationer desktop ----------------------*/
 
   .organisations {
     min-height: 250px;
     padding: 70px 60px;
+    text-align: center;
+  }
+
+  .orgranisations-text {
+    margin-inline: auto;
   }
 
   .organisation-logos {
@@ -1848,7 +1858,7 @@ footer {
   }
 
 
-  /*----------- Services preview desktop ------------*/
+  /*--------------------- Services preview desktop ----------------------*/
 
   .services-preview {
     align-items: stretch;
@@ -1857,16 +1867,17 @@ footer {
 
   .services-preview > .eyebrow,
   .services-preview > h2,
-  .services-preview > .general-cta,
-  .services-card-container {
+  .services-preview > .general-cta {
     width: 100%;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: 0;
+  }
+
+  .services-preview > .eyebrow,
+  .services-preview > h2 {
+    max-width: 850px;
   }
 
   .services-preview > h2 {
-    max-width: 850px;
     margin-top: 18px;
     margin-bottom: 30px;
     font-size: 44px;
@@ -1874,15 +1885,15 @@ footer {
 
   .services-preview > .general-cta {
     width: 280px;
-    margin-right: auto;
-    margin-left: max(0px, calc((100% - 1200px) / 2));
   }
 
   .services-card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-top: 56px;
+    width: 100%;
+    max-width: none;
+    margin: 56px 0 0;
   }
 
   .services-card {
@@ -1919,10 +1930,17 @@ footer {
   }
 
 
-  /*----------- Testimonials desktop ------------*/
+  /*--------------------- Testimonials desktop ----------------------*/
 
   .testimonials {
     padding: 100px 60px;
+  }
+
+  .testimonials-header {
+    width: 100%;
+    max-width: 900px;
+    margin-inline: auto;
+    text-align: center;
   }
 
   .testimonials-header h2 {
@@ -1952,9 +1970,7 @@ footer {
   }
 
 
- /*----------- About preview desktop ------------*/
-
-/*----------- About preview desktop ------------*/
+  /*--------------------- About preview desktop ----------------------*/
 
 .about-preview {
   position: relative;
@@ -1990,7 +2006,8 @@ mask-image: linear-gradient(
   rgba(0, 0, 0, 0.8) 65%,
   rgba(0, 0, 0, 0.35) 75%,
   transparent 88%
-);}
+  );
+}
 
 .about-preview-content {
   position: relative;
@@ -2027,13 +2044,14 @@ mask-image: linear-gradient(
   white-space: nowrap;
 }
 
-  /*----------------------------------- FÆLLES CTA DESKTOP --------------------------------*/
+  /*--------------------- FÆLLES CTA DESKTOP ----------------------*/
 
   .CTA-section {
     display: grid;
     grid-template-columns: 1fr 0.8fr;
     align-items: center;
     gap: 100px;
+    width: 100%;
     padding: 90px max(60px, calc((100% - 1200px) / 2));
   }
 
@@ -2070,10 +2088,10 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------------------------------- SERVICES OVERSIGT DESKTOP --------------------------------*/
+  /*--------------------- SERVICES OVERSIGT DESKTOP ----------------------*/
 
 
-  /*----------- Services hero desktop ------------*/
+  /*--------------------- Services hero desktop ----------------------*/
 
   .hero-services {
     padding: 180px 60px 100px;
@@ -2098,7 +2116,7 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------- Services overview desktop ------------*/
+  /*--------------------- Services overview desktop ----------------------*/
 
   .services-overview {
     padding: 100px 60px;
@@ -2178,10 +2196,10 @@ mask-image: linear-gradient(
   }
 
 
- /*----------------------------------- SERVICE UNDERSIDER DESKTOP --------------------------------*/
+ /*--------------------- SERVICE UNDERSIDER DESKTOP ----------------------*/
 
 
-/*----------- Hero desktop ------------*/
+/*--------------------- Hero desktop ----------------------*/
 
 .hero-service-pages {
   min-height: 570px;
@@ -2215,7 +2233,7 @@ mask-image: linear-gradient(
 }
 
 
-/*----------- Introduktion desktop ------------*/
+/*--------------------- Introduktion desktop ----------------------*/
 
 .the-service {
   padding-top: 120px;
@@ -2225,7 +2243,7 @@ mask-image: linear-gradient(
 .the-service-inner,
 .the-service-gain {
   width: 100%;
-  max-width: 980px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -2252,7 +2270,7 @@ mask-image: linear-gradient(
 }
 
 
-/*----------- Gains header desktop ------------*/
+/*--------------------- Gains header desktop ----------------------*/
 
 .service-gains-header {
   width: 100%;
@@ -2267,9 +2285,7 @@ mask-image: linear-gradient(
 }
 
 
-/*----------- Gains liste desktop ------------*/
-
-/*----------- Gains liste desktop ------------*/
+/*--------------------- Gains liste desktop ----------------------*/
 
 .service-gains-list {
   display: block;
@@ -2338,10 +2354,10 @@ mask-image: linear-gradient(
   height: 15px;
 }
 
-/*----------------------------------- SERVICE PROCESS DESKTOP --------------------------------*/
+/*--------------------- SERVICE PROCESS DESKTOP ----------------------*/
 
 
-/*----------- Sektion desktop ------------*/
+/*--------------------- Sektion desktop ----------------------*/
 
 .service-process {
   padding-top: 100px;
@@ -2350,11 +2366,11 @@ mask-image: linear-gradient(
 
 .service-process-inner {
   width: 100%;
-  max-width: 980px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
-/*----------- Process header desktop ------------*/
+/*--------------------- Process header desktop ----------------------*/
 
 .service-process-header {
   display: block;
@@ -2380,7 +2396,7 @@ mask-image: linear-gradient(
 }
 
 
-/*----------- Procesliste desktop ------------*/
+/*--------------------- Procesliste desktop ----------------------*/
 
 .service-process-list {
   margin-top: 44px;
@@ -2413,12 +2429,10 @@ mask-image: linear-gradient(
   line-height: 1.7;
 }
 
-  /*----------------------------------- ABOUT DESKTOP --------------------------------*/
+  /*--------------------- ABOUT DESKTOP ----------------------*/
 
 
-  /*----------- About hero desktop ------------*/
-
-/*----------- About hero desktop ------------*/
+  /*--------------------- About hero desktop ----------------------*/
 
 .hero-about {
   display: grid;
@@ -2465,7 +2479,7 @@ mask-image: linear-gradient(
   line-height: 1.7;
 }
 
-  /*----------- My story desktop ------------*/
+  /*--------------------- My story desktop ----------------------*/
 
   .about {
     padding: 100px 60px;
@@ -2477,6 +2491,7 @@ mask-image: linear-gradient(
     gap: 12px;
     width: 100%;
     max-width: 1200px;
+    margin-inline: auto;
   }
 
   .about-inner .eyebrow,
@@ -2498,7 +2513,7 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------- Image quote desktop ------------*/
+  /*--------------------- Image quote desktop ----------------------*/
 
   .image-quote-section {
     min-height: 520px;
@@ -2514,7 +2529,7 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------- Qualifications desktop ------------*/
+  /*--------------------- Qualifications desktop ----------------------*/
 
   .qualifications {
     padding: 100px 60px;
@@ -2523,6 +2538,7 @@ mask-image: linear-gradient(
   .qualifications-inner {
     width: 100%;
     max-width: 1200px;
+    margin-inline: auto;
     text-align: center;
   }
 
@@ -2546,10 +2562,10 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------------------------------- CONTACT DESKTOP --------------------------------*/
+  /*--------------------- CONTACT DESKTOP ----------------------*/
 
 
-  /*----------- Contact hero desktop ------------*/
+  /*--------------------- Contact hero desktop ----------------------*/
 
   .contact-hero {
     min-height: 440px;
@@ -2557,7 +2573,9 @@ mask-image: linear-gradient(
   }
 
   .contact-hero-inner {
+    width: 100%;
     max-width: 800px;
+    margin-inline: auto;
     text-align: center;
   }
 
@@ -2573,7 +2591,7 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------- Contact section desktop ------------*/
+  /*--------------------- Contact section desktop ----------------------*/
 
   .contact-section {
     padding: 100px 60px;
@@ -2584,6 +2602,7 @@ mask-image: linear-gradient(
     grid-template-columns: 0.9fr 1.1fr;
     gap: 100px;
     align-items: start;
+    max-width: 1200px;
   }
 
   .contact-form {
@@ -2623,7 +2642,7 @@ mask-image: linear-gradient(
   }
 
 
-  /*----------------------------------- FOOTER DESKTOP --------------------------------*/
+  /*--------------------- FOOTER DESKTOP ----------------------*/
 
   footer {
     padding: 70px 60px;
@@ -2635,7 +2654,7 @@ mask-image: linear-gradient(
     align-items: start;
     gap: 60px;
     width: 100%;
-    max-width: 1320px;
+    max-width: 1200px;
     margin-inline: auto;
   }
 
@@ -2650,201 +2669,4 @@ mask-image: linear-gradient(
   .footer-contact-list a {
     gap: 14px;
   }
-    /*----------------------------------- DESKTOP JUSTERINGER --------------------------------*/
-
-
-  /*----------- Fælles indholdsbredde ------------*/
-
-  .header-inner {
-    max-width: 1320px;
-  }
-
-  .hero-content,
-  .services-overview-inner,
-  .the-service-inner,
-  .the-service-gain,
-  .service-process-inner,
-  .about-inner,
-  .qualifications-inner,
-  .contact-section-inner,
-  .footer-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
-  }
-
-
-  /*----------- Ens sidepadding ------------*/
-
-  .hero-index,
-  .organisations,
-  .services-preview,
-  .testimonials,
-  .CTA-section,
-  .hero-services,
-  .services-overview,
-  .hero-service-pages,
-  .the-service,
-  .service-process,
-  .about,
-  .qualifications,
-  .contact-hero,
-  .contact-section,
-  footer {
-    padding-right: max(60px, calc((100% - 1200px) / 2));
-    padding-left: max(60px, calc((100% - 1200px) / 2));
-  }
-
-
-  /*----------------------------------- EYEBROWS DESKTOP --------------------------------*/
-
-
-  /*----------- Centrerede eyebrows ------------*/
-
-  .organisations .eyebrow,
-  .testimonials-header .eyebrow,
-  .qualifications .eyebrow,
-  .contact-hero .eyebrow {
-    width: 100%;
-    text-align: center;
-  }
-
-
-  /*----------- Venstrestillede eyebrows ------------*/
-
-  .hero-index .hero-eyebrow,
-  .services-preview > .eyebrow,
-  .hero-services .eyebrow,
-  .hero-service-pages .eyebrow,
-  .the-service-gain .eyebrow,
-  .service-process .eyebrow,
-  .hero-about .eyebrow,
-  .about .eyebrow,
-  .about-preview .eyebrow {
-    text-align: left;
-  }
-
-
-  /*----------------------------------- FORSIDE JUSTERINGER --------------------------------*/
-
-
-  /*----------- Hero ------------*/
-
-  .hero-content {
-    max-width: 1200px;
-  }
-
-
-  /*----------- Organisationer ------------*/
-
-  .organisations {
-    text-align: center;
-  }
-
-  .orgranisations-text {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-
-  /*----------- Services preview ------------*/
-
-  .services-preview {
-    align-items: stretch;
-  }
-
-  .services-preview > .eyebrow,
-  .services-preview > h2,
-  .services-preview > .general-cta,
-  .services-card-container {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .services-preview > .eyebrow {
-    width: 100%;
-    max-width: 850px;
-  }
-
-  .services-preview > h2 {
-    width: 100%;
-    max-width: 850px;
-  }
-
-  .services-preview > .general-cta {
-    width: 280px;
-  }
-
-  .services-card-container {
-    width: 100%;
-    max-width: none;
-  }
-
-
-  /*----------- Testimonials ------------*/
-
-  .testimonials-header {
-    width: 100%;
-    max-width: 900px;
-    margin-inline: auto;
-    text-align: center;
-  }
-
-
-  /*----------- CTA ------------*/
-
-  .CTA-section {
-    grid-template-columns: 1fr 0.8fr;
-    width: 100%;
-  }
-
-
-  /*----------------------------------- SERVICES JUSTERINGER --------------------------------*/
-
-  .hero-services-inner,
-  .hero-service-page-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
-  }
-
-
-  /*----------------------------------- ABOUT JUSTERINGER --------------------------------*/
-
-  .about-inner {
-    margin-inline: auto;
-  }
-
-  .qualifications-inner {
-    margin-inline: auto;
-  }
-
-
-  /*----------------------------------- CONTACT JUSTERINGER --------------------------------*/
-
-  .contact-hero-inner {
-    width: 100%;
-    max-width: 800px;
-    margin-inline: auto;
-  }
-
-
-  /*----------------------------------- FOOTER JUSTERINGER --------------------------------*/
-
-  .footer-inner {
-    max-width: 1200px;
-  }
-
-  /*----------- Centrerede eyebrows desktop ------------*/
-
-.organisations .eyebrow,
-.testimonials-header .eyebrow,
-.qualifications .eyebrow,
-.contact-hero .eyebrow {
-  width: 100%;
-  max-width: none;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
 }
