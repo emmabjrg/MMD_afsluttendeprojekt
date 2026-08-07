@@ -2,7 +2,11 @@
 
 :root {
   --primary: #1f2a3a;
+
   --accent: #6b8e5a;
+  --accent-dark: #526D46;
+  --accent-light: #79996a;
+
   --background: #faf9f6;
   --text: #121417;
   --secondary: #e6e7d9;
@@ -104,7 +108,7 @@ main {
 
 .logo-subtitle {
   margin-top: 6px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -281,7 +285,7 @@ main {
 /*----------- Hero-tekst ------------*/
 
 .hero-eyebrow {
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", sans-serif;
   font-size: 10px;
   font-weight: 500;
@@ -299,7 +303,7 @@ h1 {
 }
 
 .highlight {
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", sans-serif;
 }
 
@@ -406,7 +410,7 @@ p {
 }
 
 .eyebrow {
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -500,7 +504,7 @@ h3 {
   justify-content: space-between;
   gap: 8px;
   margin-top: 12px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 14px;
 }
 
@@ -571,7 +575,7 @@ h3 {
   width: 48px;
   height: 2px;
   margin: 0px auto 0;
-  background-color: var(--accent);
+  background-color: var(--accent-dark);
 }
 
 .testimonial-author {
@@ -585,7 +589,7 @@ h3 {
 
 .testimonial-role {
   margin-top: 2px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 15px;
 }
 
@@ -627,7 +631,7 @@ h3 {
 }
 
 .testimonial-dot.is-active {
-  background-color: var(--accent);
+  background-color: var(--accent-dark);
 }
 
 /*----------- About preview ------------*/
@@ -756,7 +760,7 @@ h3 {
   width: 42px;
   height: 2px;
   margin-top: 18px;
-  background-color: var(--accent);
+  background-color: var(--accent-dark);
 }
 
 
@@ -991,7 +995,7 @@ h3 {
 
 .service-number {
   padding-top: 2px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -1063,7 +1067,7 @@ h3 {
 
 .service-preview-eyebrow {
   margin-top: 24px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -1082,7 +1086,7 @@ h3 {
   width: 42px;
   height: 2px;
   margin-top: 18px;
-  background-color: var(--accent);
+  background-color: var(--accent-dark);
 }
 
 .service-preview-description {
@@ -1119,7 +1123,7 @@ h3 {
   align-items: center;
   gap: 12px;
   margin-top: 26px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 14px;
   font-weight: 500;
 }
@@ -1351,7 +1355,7 @@ h3 {
 }
 
 .contact-detail-content a:hover {
-  color: var(--accent);
+  color: var(--accent-dark);
 }
 
 
@@ -1493,7 +1497,7 @@ footer {
 
 .footer-logo-subtitle {
   margin-top: 6px;
-  color: var(--accent);
+  color: var(--accent-light);
   font-family: "Manrope", Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -1519,7 +1523,7 @@ footer {
 
 .footer-heading {
   margin: 0 0 16px;
-  color: var(--accent);
+  color: var(--accent-light);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1533,7 +1537,7 @@ footer {
 } 
 
 .footer-links a:hover {
-  color: var(--accent);
+  color: var(--accent-light);
 }
 
 .footer-column {
