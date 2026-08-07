@@ -1840,6 +1840,10 @@ footer {
 }
   /*--------------------- Organisationer desktop ----------------------*/
 
+  .eyebrow {
+    font-size: 16px;
+  }
+
   .organisations {
     min-height: 250px;
     padding: 70px 60px;
