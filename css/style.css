@@ -1468,7 +1468,7 @@ footer {
   flex-direction: column;
   gap: 16px;
   padding: 64px 30px;
-  color: var(--secondary);
+  color: var(--background);
   font-size: 14px;
   background-color: var(--primary);
 }
