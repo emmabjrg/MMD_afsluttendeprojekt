@@ -1824,6 +1824,9 @@ footer {
   white-space: nowrap;
 }
 
+.cta-secondary {
+  justify-content: center;}
+
 .hero-index .hero-image {
   position: absolute;
   right: 0;
